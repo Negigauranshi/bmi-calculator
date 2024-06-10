@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#calculator">BMI Calculator</a></li>
+            <li><a href="#info">BMI Info</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section">
+        <h1>Welcome to the BMI Calculator</h1>
+        <p>Your health is important. Calculate your BMI to understand where you stand.</p>
+    </section>
+
+    <section id="calculator" class="section">
+        <h1>BMI Calculator</h1>
+        <form id="bmiForm">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+            <button type="submit">Calculate BMI</button>
+        </form>
+        <p id="result"></p>
+            </section>
+
+    <section id="info" class="section">
+        <h1>What is BMI?</h1>
+        <p>BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.</p>
+        <div class="bmi-category">
+            <div class="category underweight">
+                <img src="underweight.png" alt="Underweight">
+                <p>Underweight: BMI less than 18.5</p>
+                <p>Importance: May indicate malnutrition, an eating disorder, or other health issues.</p>
+            </div>
+            <div class="category normal">
+                <img src="normal.png" alt="Normal">
+                <p>Normal weight: BMI 18.5-24.9</p>
+                <p>Importance: Generally associated with good health.</p>
+            </div>
+            <div class="category overweight">
+                <img src="overweight.png" alt="Overweight">
+                <p>Overweight: BMI 25-29.9</p>
+                <p>Importance: May lead to increased risk of heart disease, diabetes, and other health conditions.</p>
+            </div>
+            <div class="category obese">
+                <img src="obese.png" alt="Obese">
+                <p>Obese: BMI 30 or higher</p>
+                <p>Importance: Higher risk of serious health problems including heart disease, diabetes, and high blood pressure.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h1>Contact Us</h1>
+        <p>For more information, please contact us at <a href="mailto:info@bmi-calculator.com">info@bmi-calculator.com</a>.</p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
